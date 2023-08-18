@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz - Página Inicial</title>
+    <style>
+        /* Para reset na página */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        main{
+            width: 100%;
+            height: 100vh;
+            /* background-color: aqua; */
+            background-image: url(assets/img/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;           /* coloca em linha */
+            align-items: center;     /* alinhamento do eixo principal  */
+            justify-content: center; /* alinhamento do eixo secundário */
+            gap: 15px;               /* espaçamento */ 
+        }
+        .bloco1, .bloco2{
+            width: 25%;
+            height: 450px;
+            border: 1px solid rgb(165, 164, 164);
+            background-color: rgb(212, 210, 210, 0.631);
+            border-radius: 20px;
+            padding: 15px;
+        }
+        .titulo{
+            text-align: center;
+            margin: 20px 0px;
+            
+        }
+        .bloco1 p{
+            text-align: justify;
+            line-height: 30px;
+            font-size: 18px;
+        }
+        .input-login{
+            width: 80%;
+            padding: 5px 15px;
+            border-radius: 15px;
+            border: none;
+            margin: 10px auto;
+            display: block;
+        }
+        .btn-login{
+            width: 30%;
+            height: 30px;
+            border-radius: 15px;
+            display: block;
+            margin: auto;
+            border: 1px solid rgb(212, 216, 230);
+            background-color: rgb(9, 87, 56);
+            color: white;
+        }
+        .btn-login:hover{
+            background-color: rgb(165, 164, 164);
+            color: yellow;
+            transition: 1s;
+            cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- div.bloco${Texto$}*2 -->
+        <div class="bloco1">
+            <h2 class="titulo">Projeto - Quizz Web</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, atque. Excepturi qui enim quibusdam distinctio, omnis corporis reprehenderit, laudantium quam repudiandae suscipit adipisci? Corrupti, ullam ea voluptatibus minus nisi obcaecati?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, laudantium voluptas repellat ducimus quo accusantium inventore in quisquam amet nostrum debitis aliquam temporibus quam laborum nemo totam distinctio voluptates. Est!</p>
+        </div>
+        <div class="bloco2">
+            <h2 class="titulo">Login</h2>
+            <form action="perguntas.html">
+                <input type="email" placeholder="E-mail..." class="input-login">
+                <input type="password" placeholder="Senha..." class="input-login">
+                <input type="submit" value="Acessar" class="btn-login">
+            </form>
+        </div>
+        <!-- div.bloco$*2 -->
+        <!-- <div class="bloco1"></div>
+        <div class="bloco2"></div> -->
+        <!-- div.bloco*2 -->        
+        <!-- <div class="bloco"></div>
+        <div class="bloco"></div> -->
+        <!-- div*2 -->        
+        <!-- <div></div>
+        <div></div> -->
+    </main>
+</body>
+</html>
